@@ -1,0 +1,81 @@
+<nav>
+  <a href="index.html">🏠 Home</a> |
+  <a href="pantai.html">🏖️ Pantai</a> |
+  <a href="laut.html">🌊 Laut</a>
+</nav>
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+body {
+  font-family: 'Parisienne', cursive;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background-color: #ff69b4;
+  padding: 30px;
+  color: white;
+}
+
+nav {
+  background-color: #ffe4e1;
+  padding: 15px;
+}
+
+nav a {
+  margin: 0 10px;
+  color: #d63384;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 30px;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #ffc0cb;
+  color: #8b0051;
+}
+
+/* Gambar Barbie */
+.barbie-img {
+  max-width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.barbie-img:hover {
+  transform: scale(1.05);
+}
+
+/* Tema Pantai */
+body.pantai-theme {
+  background: linear-gradient(to top, #fefbd8, #dbe6f6);
+  color: #db7093;
+}
+
+/* Tema Laut */
+body.laut-theme {
+  background: linear-gradient(to top, #b3e5fc, #e1f5fe);
+  color: #0077be;
+}
+
+/* Responsif */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  .barbie-img {
+    width: 80%;
+  }
+}
